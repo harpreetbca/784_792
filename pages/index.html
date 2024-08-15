@@ -19,19 +19,29 @@
     crossorigin="anonymous"></script>
 
   <!-- navbar coding -->
-  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark"
+    style="height: 70px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
     <div class=" container-fluid">
 
-      <a class="navbar-brand" href="#">FOOTWEARS</a>
+      <a class="navbar-brand " href="#">FOOTWEARS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id=" navbarSupportedContent">
+      <div class="collapse navbar-collapse " id=" navbarSupportedContent">
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+        <ul class="navbar-nav ms-auto mb-1 mb-md-2  mx-auto gap-5  ">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./mens.html">Mens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./women.html">Womens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./kids.html">Kids</a>
           </li>
 
           <li class="nav-item">
@@ -40,18 +50,20 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./services.html">Services</a>
           </li>
+
         </ul>
 
-        <form class="d-flex ms-auto">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex">
+          <input class="form-control btn-outline-primary me-2 bg-dark " type="search" placeholder="Search"
+            aria-label="Search">
+          <button class="btn btn-outline-primary " type="submit">Search</button>
         </form>
 
       </div>
     </div>
   </nav>
 
-  <!-- carousel -->
+  carousel
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -93,6 +105,18 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+
+  <h2 style="color: black; text-align: center;">SPOTLIGHTS</h2>
+
+  card
+
+  <div class="card bg-dark text-white">
+    <img src="../images/shoesimage.jpeg" class="card-img" style="height: 500px;" alt="no way">
+    <div class="card-img-overlay">
+      <h5 class="card-title">choose comfort</h5>
+
+    </div>
   </div>
 
 </body>
