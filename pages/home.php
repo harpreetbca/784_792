@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-5">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../pages/home.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/about.html">About us</a>
@@ -77,13 +77,6 @@
             </div>
         </nav>
         <!-- end navbar -->
-
-        <div class="content">
-            <h1>Welcome to My Website</h1>
-            <p>This is the main content of the page. If there's not enough content, the footer will still stick to the
-                bottom.</p>
-        </div>
-
 
 
         <footer class="footer">
