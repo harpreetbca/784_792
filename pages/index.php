@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,17 +36,17 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto gap-5">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="./home.php">Home</a>
+            <a class="nav-link " aria-current="page" href="about1.php?slug=home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/about.html">About us</a>
+            <a class="nav-link" href="about1.php?slug=about">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/product.html">Products</a>
+            <a class="nav-link" href="about1.php?slug=product">Products</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../pages/contactus.html">Contact us</a>
+            <a class="nav-link" href="about1.php?slug=contactus">Contact us</a>
           </li>
 
           <!-- <li class="nav-item">
@@ -194,4 +192,3 @@
 </body>
 
 </html>
->>>>>>> 35a2e8d32e47befd52f65ecbcfa46c92b33cd9ec
