@@ -64,14 +64,7 @@
                             <a class="nav-link" href="../pages/contactus.html">Contact us</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="../images/account.jpeg" alt="" width="40" height="30"> </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="../images/cart.jpeg" alt="" width="40" height="30"> </a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
