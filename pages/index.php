@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="../images/image.jpeg" alt="" width="43" height="35" class="d-inline-block align-text-top">
+        <img src="" alt="" width="43" height="35" class="d-inline-block align-text-top">
         FURNITURE
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -123,7 +123,7 @@
     <div class="col-sm-4 mt-4 mb-5">
       <div class="card">
         <div class="card-body">
-          <img src="../images/furniture4.jpeg" class="card-img-top" alt="...">
+          <img src="../images/image.jpeg" class="card-img-top" alt="...">
           <!-- <h5 class="card-title">Special title treatment</h5> -->
           <p class="card-text">Our Compact Side Table is the perfect addition to any living room, bedroom, or office,
             offering a stylish.</p>
@@ -135,7 +135,7 @@
     <div class="col-sm-4 mt-4">
       <div class="card">
         <div class="card-body">
-          <img src="../images/furniture5.jpeg" class="card-img-top" alt="...">
+          <img src="../images/bed.jpeg" class="card-img-top" alt="...">
           <p class="card-text">Experience luxury and comfort with our Deluxe King-Size Bed, a perfect combination of
             style and relaxation.</p>
           <a href="#" class="btn btn-dark ">Go to the Product</a>
