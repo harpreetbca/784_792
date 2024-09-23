@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="../images/image.jpeg" alt="" width="43" height="35" class="d-inline-block align-text-top">
+        <img src="../images/download1.jpeg" alt="" width="43" height="35" class="d-inline-block align-text-top">
         FURNITURE
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -80,21 +80,21 @@
     </div>
     <div class="carousel-inner ">
       <div class="carousel-item active">
-        <img src="../images/furniture2.jpeg" class="d-sm w-100 mb-auto " style="height: 450px;" alt="pic">
+        <img src="../images/download2.jpg" class="d-sm w-100 mb-auto " style="height: 650px;" alt="pic">
         <div class="carousel-caption d-none d-md-block">
           <h5 style="color: rgb(1, 4, 17);">Comfort and style in every piece</h5>
 
         </div>
       </div>
       <div class="carousel-item ">
-        <img src="../images/furniture1.jpeg" class="d-sm w-100 " style="height: 450px;" alt="pic">
+        <img src="../images/download3.jpeg" class="d-sm w-100 " style="height: 650px;" alt="pic">
         <div class="carousel-caption d-none d-md-block">
           <h5 style="color:black;">Durable materials for long-lasting use</h5>
 
         </div>
       </div>
       <div class="carousel-item height=">
-        <img src="../images/furniture3.jpeg" class="d-sm w-100 " style="height: 450px;" alt="pic">
+        <img src="../images/download4.jpeg" class="d-sm w-100 " style="height: 650px;" alt="pic">
         <div class="carousel-caption d-none d-md-block">
           <h5 style="color:black;">Modern designs that fit any space</h5>
 
