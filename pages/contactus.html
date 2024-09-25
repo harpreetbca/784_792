@@ -50,7 +50,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-5">
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="./about.html">About us</a>
                         </li>
@@ -62,14 +62,28 @@
                             <a class="nav-link" href="./contactus.html">Contact us</a>
                         </li>
 
-                        
+
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- end navbar -->
+        <div class="form-container">
+            <form action="#" method="post">
+                <h2>Contact Us</h2>
 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
         <footer class="footer">
             <p>© 2024 My Website. All rights reserved.</p>
         </footer>
