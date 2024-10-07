@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        grid-container {
+  display: grid;                                                /* 1 */
+  grid-auto-rows: 50px;                                         /* 2 */
+  grid-gap: 10px;                                               /* 3 */
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));   /* 4 */
+}
+
+[short] {
+  grid-row: span 1;                                             /* 5 */
+  background-color: green;
+}
+
+[tall] {
+  grid-row: span 2;
+  background-color: crimson;
+}
+
+[taller] {
+  grid-row: span 3;
+  background-color: blue;
+}
+
+[tallest] {
+  grid-row: span 4;
+  background-color: gray;
+}
+
+grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <grid-container>
+        <grid-item short>01</grid-item>
+        <grid-item short>02</grid-item>
+        <grid-item tall>03</grid-item>
+        <grid-item tall>04</grid-item>
+        <grid-item short>05</grid-item>
+        <grid-item taller>06</grid-item>
+        <grid-item short>07</grid-item>
+        <grid-item tallest>08</grid-item>
+        <grid-item tall>09</grid-item>
+        <grid-item short>10</grid-item>
+        <grid-item tallest>etc.</grid-item>
+        <grid-item tall></grid-item>
+        <grid-item taller></grid-item>
+        <grid-item short></grid-item>
+        <grid-item short></grid-item>
+        <grid-item short></grid-item>
+        <grid-item short></grid-item>
+        <grid-item tall></grid-item>
+        <grid-item short></grid-item>
+        <grid-item taller></grid-item>
+        <grid-item short></grid-item>
+        <grid-item tall></grid-item>
+        <grid-item short></grid-item>
+        <grid-item tall></grid-item>
+        <grid-item short></grid-item>
+        <grid-item short></grid-item>
+        <grid-item tallest></grid-item>
+        <grid-item taller></grid-item>
+        <grid-item short></grid-item>
+        <grid-item tallest></grid-item>
+        <grid-item tall></grid-item>
+        <grid-item short></grid-item>
+      </grid-container>
+</body>
+</html>

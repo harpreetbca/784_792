@@ -11,7 +11,7 @@ $message = $_POST['message'];
 
 
 
-$conn = mysqli_connect("localhost" ,"root", "","newproject");
+$conn = mysqli_connect("localhost" ,"root", "","krokuch");
 
 if(!$conn){
     echo "error" .mysqli_connect_error();
@@ -19,7 +19,7 @@ if(!$conn){
 
 
 
-$sql = "INSERT INTO sneha (name, email , message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO krdeaa(name, email , message) VALUES ('$name', '$email', '$message')";
 if(mysqli_query($conn, $sql))
 {
     echo "<h3>Your data is succesfully submitted.</h3>";
