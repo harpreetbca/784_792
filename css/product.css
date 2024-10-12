@@ -4,6 +4,7 @@
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 10px;
+    text-align: center;
 }
 
 .price
@@ -12,4 +13,30 @@
     font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 10px;
+    text-align: center;
 }
+
+.btn
+{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    border: none;
+    border-radius: 8px ;
+    background-color: #273043;
+}
+
+
+
+.card
+{
+    border: 1px solid rgb(233, 229, 229);
+    border-radius: 30px;
+    background-color: #eff6ee;
+}
+
+/* ddbea9
+cb997e  */
+
+

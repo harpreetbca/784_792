@@ -3,6 +3,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    background-color: #9197ae;
     
 }
 /* Ensure the navbar expands and collapses without extra styling */
@@ -20,19 +21,24 @@
    
 }
 .navbar-brand{
-    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-family:serif; 
+    color: white;
+    padding-left: 40px;
+    font-size: 35px;
 }
 
 .nav-item {
     padding: 10px;
     font-weight: bold;
-    color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-right: 40px;
+    font-family:serif; 
+    font-size: 19px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: white;
+    
 }
 
 
@@ -86,7 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 70px;
-    background-color:  #e5eaf5;
+ background-color:  #9197ae;  /* #fbf5f3 */
 }
 
 .content {
@@ -127,14 +133,14 @@ body {
 } */
 
 
-.btn-group
+.button
 {
   
-   width: 15%;
-   height: 50%;
+   width: 20%;
+   
    padding: 10px;
-   background-color:  #a55233;
-   color: black;
+  margin-bottom: 50px;
+   
    font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
     border: none;

@@ -19,11 +19,13 @@
 
 
 
+  
   <!-- start navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../pages/index.html">
-        <img src="../images/download1.jpeg" alt="" width="43" height="35" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="./index.html
+      ">
+
         FURNITURE
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,22 +35,26 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto gap-5">
-          
+
           <li class="nav-item">
             <a class="nav-link" href="../pages/about.html">About us</a>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+              aria-expanded="false" aria-label="Toggle navigation">
               Products
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="./almirah.html">Almirah</a></li>
               <li><a class="dropdown-item" href="./bed.html">Bed Set</a></li>
 
-              <a class="dropdown-item" href="./sofa.html">Sofa Set</a>
+              <li><a class="dropdown-item" href="./sofa.html">Sofa Set</a></li>
             </ul>
           </li>
+
+
+
 
           <li class="nav-item">
             <a class="nav-link" href="../pages/contactus.html">Contact us</a>
