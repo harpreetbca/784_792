@@ -1,4 +1,10 @@
-
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+}
 /* Ensure the navbar expands and collapses without extra styling */
 .navbar-collapse {
     display: none; /* Initially hidden */
@@ -9,13 +15,18 @@
 }
 
 .navbar-nav {
-    list-style: none;
+    
     padding-left: 0;
    
+}
+.navbar-brand{
+    font-family:Georgia, 'Times New Roman', Times, serif; 
 }
 
 .nav-item {
     padding: 10px;
+    font-weight: bold;
+    color: black;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -33,13 +44,15 @@
     }
 }
 
-.card-title
+
+/* .card-title
 {
     position: absolute;
     font-size:40px;
     top: 4%;
     right:5%;
     color: black;
+   
 
 }
 .card-title1
@@ -61,7 +74,7 @@
 .card-text
 {
     margin-top: 60px;
-}
+} */
 
 /* Footer styling */
 html, body {
@@ -72,6 +85,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
+    background-color:  #e5eaf5;
 }
 
 .content {
@@ -80,7 +95,7 @@ body {
 
 .footer {
     height: 50px;
-    background-color: #333;
+    background-color: #333; 
     color: white;
     text-align: center;
     line-height: 50px;
@@ -115,8 +130,16 @@ body {
 .btn-group
 {
   
-   width: 10%;
+   width: 15%;
    height: 50%;
-   background-color: lightslategray;
+   padding: 10px;
+   background-color:  #a55233;
+   color: black;
+   font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 10px;
+    
+
     
 }

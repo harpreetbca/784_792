@@ -37,8 +37,17 @@
           <li class="nav-item">
             <a class="nav-link" href="../pages/about.html">About us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/product.html">Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./almirah.html">Almirah</a></li>
+              <li><a class="dropdown-item" href="./bed.html">Bed Set</a></li>
+
+              <a class="dropdown-item" href="./sofa.html">Sofa Set</a>
+            </ul>
           </li>
 
           <li class="nav-item">

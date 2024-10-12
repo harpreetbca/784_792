@@ -1,0 +1,15 @@
+.topic
+{
+    font-weight: bolder;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.price
+{
+    font-weight: bold;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
