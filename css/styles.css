@@ -1,38 +1,32 @@
 .navbar{
     position: fixed;
-    top: 0;
+   top: 0;
     width: 100%;
     z-index: 1;
     background-color: #9197ae;
     
 }
 /* Ensure the navbar expands and collapses without extra styling */
-.navbar-collapse {
-    display: none; /* Initially hidden */
+ .navbar-collapse {
+    display: none;
+}
+
+.navbar-toggler
+{
+    display: block;
+    background-color: white;
+    border: yellow;
+    color: saddlebrown;
 }
 
 .navbar-collapse.show {
-    display: block; /* When toggled, show the navbar items */
-}
+    display: block; 
+} 
 
 .navbar-nav {
     
     padding-left: 0;
    
-}
-.navbar-brand{
-    font-family:serif; 
-    color: white;
-    padding-left: 40px;
-    font-size: 35px;
-}
-
-.nav-item {
-    padding: 10px;
-    font-weight: bold;
-    padding-right: 40px;
-    font-family:serif; 
-    font-size: 19px;
 }
 
 .nav-link {
@@ -48,6 +42,21 @@
     .navbar-collapse {
         width: 100%; /* Ensure it takes up the full width on mobile */
     }
+}
+
+.navbar-brand{
+    font-family:serif; 
+    color: white;
+    padding-left: 40px;
+    font-size: 35px;
+}
+
+.nav-item {
+    padding: 10px;
+    font-weight: bold;
+    padding-right: 40px;
+    font-family:serif; 
+    font-size: 19px;
 }
 
 
@@ -107,7 +116,13 @@ body {
     line-height: 50px;
 }
 
-
+.video
+{
+    width: 100%;
+    height: 550px;
+    /* margin: auto; */
+    margin-bottom: 100px;
+}
 /* .container
 {
     margin: 20px;
