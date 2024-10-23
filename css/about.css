@@ -1,0 +1,66 @@
+.card-img
+{
+    opacity: 0.4;
+    
+}
+
+.card-title
+{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    font-weight: bolder;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-text
+{
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center; 
+    padding-top: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.btn {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white; /* White border */
+    width: 20%;
+    height: 9%;
+    padding-top: 10px;
+    color: white; /* Text color */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+   
+}
+
+.btn:hover {
+    box-shadow:
+    0  0  3px rgba(255,255,255,0.5),
+   0  0  5px rgba(255,255,255,0.4),
+   0  0  8px rgba(174, 140, 140, 0.2);
+}
+
+.who
+{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
