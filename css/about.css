@@ -64,3 +64,9 @@
     color: white;
     margin-top: 80px;
 }
+
+.carousel-item{
+    justify-content: center;
+
+align-items: center;
+}
