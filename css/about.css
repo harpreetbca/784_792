@@ -65,10 +65,40 @@
     margin-top: 80px;
 }
 
-.img1{
+.container {
+    text-align: center;
+    margin: 10px auto;
+}
 
-    justify-content: center;
-    width: 90%;
-    height: 60%;
-    padding: auto;
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically, if needed */
+}
+
+.about-image {
+    max-width: 100%; /* Ensure the image fills the width of the container */
+    height: 600px; /* Maintain aspect ratio */
+    max-height: 600px; /* Set a maximum height for the image */
+    margin-top: 30px;
+}
+
+.text-content {
+    margin-top: 20px; /* Space between image and text */
+}
+
+p {
+    font-size: 20px; /* Slightly smaller for better readability */
+    color: #f8f9fa; /* Light text color for contrast against dark background */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px; /* Add margin for spacing */
+}
+
+.title{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
 }
