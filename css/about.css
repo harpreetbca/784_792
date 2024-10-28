@@ -64,3 +64,11 @@
     color: white;
     margin-top: 80px;
 }
+
+.img1{
+
+    justify-content: center;
+    width: 90%;
+    height: 60%;
+    padding: auto;
+}
