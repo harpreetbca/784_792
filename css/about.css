@@ -65,8 +65,10 @@
     margin-top: 80px;
 }
 
-.carousel-item{
-    justify-content: center;
+.img1{
 
-align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 60%;
+    padding: auto;
 }
