@@ -1,0 +1,12 @@
+.pur
+{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    font-weight: bolder;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

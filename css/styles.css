@@ -14,9 +14,9 @@
 .navbar-toggler
 {
     display: block;
-    background-color: white;
-    border: yellow;
-    color: saddlebrown;
+  
+    border: rgb(10, 10, 10);
+    color: rgb(204, 197, 241);
 }
 
 .navbar-collapse.show {
