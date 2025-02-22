@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>DATA ABOUT PAGES</h1>
-    <form action="about1.php" method="post">
+    <form action="welcome.php" method="post">
         <label for="page">Slug: </label><br>
         <input type="text" name="slug"><br><br>
 

@@ -19,58 +19,9 @@
         crossorigin="anonymous"></script>
 
 
-    <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-
-                𝓕𝓾𝓻𝓷𝓲𝓸
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-5">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/about.html">𝓐𝓫𝓸𝓾𝓽 𝓤𝓼</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            𝓢𝓱𝓸𝓹
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./almirah.html">𝓐𝓵𝓶𝓲𝓻𝓪𝓱</a></li>
-                            <li><a class="dropdown-item" href="./bed.html">𝓑𝓮𝓭 𝓢𝓮𝓽</a></li>
-
-                            <li><a class="dropdown-item" href="./sofa.html">𝓢𝓸𝓯𝓪 𝓢𝓮𝓽</a></li>
-                        </ul>
-                    </li>
-
-
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contactus.html">𝓒𝓸𝓷𝓽𝓪𝓬𝓽 𝓤𝓼</a>
-                    </li>
-
-                    <!-- <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img src="../images/account.jpeg" alt="" width="40" height="30"> </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img src="../images/cart.jpeg" alt="" width="40" height="30"> </a>
-          </li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- end navbar -->
+    <?php
+    include('header.php');
+    ?>
 
     <!-- almirah products -->
 
@@ -82,7 +33,7 @@
                     <!-- <h5 class="card-title">Special title treatment</h5> -->
                     <p class="topic">Classic Wooden Almirah</p>
                     <p class="price">₹25,000</p>
-                    <a href="./product.html" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
 
                 </div>
             </div>
@@ -93,7 +44,7 @@
                     <img src="../images/almirah.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Royal Steel Wardrobe </p>
                     <p class="price">₹18,000</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -103,7 +54,7 @@
                     <img src="../images/almirah3.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Vintage Teak Almirah</p>
                     <p class="price">₹30,000</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -113,7 +64,7 @@
                     <img src="../images/almirah4.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Modern Steel Closet </p>
                     <p class="price">₹22,000</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -123,7 +74,7 @@
                     <img src="../images/almirah5.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Sheesham Wood Almirah </p>
                     <p class="price">₹35,000</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -133,7 +84,7 @@
                     <img src="../images/almirah6.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Elegant Steel Almirah</p>
                     <p class="price">₹15,550</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -143,7 +94,7 @@
                     <img src="../images/almirah7.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Antique Wooden Wardrobe</p>
                     <p class="price">₹23,979</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -153,7 +104,7 @@
                     <img src="../images/almirah8.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Sturdy Steel Almirah</p>
                     <p class="price">₹17,290</p>
-                    <a href="#" class="btn btn-dark ">Purchase</a>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>
         </div>
@@ -162,9 +113,9 @@
 
 
 
-    <footer class="footer">
-        <p style="text-align: center;">© 2024 My Website. All rights reserved.</p>
-    </footer>
+    <?php
+    include('footer.php');
+    ?>
 </body>
 
 </html>
