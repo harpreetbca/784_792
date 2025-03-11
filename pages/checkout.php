@@ -54,7 +54,8 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
         </form>
     </div>
 
-    <?php include('footer.php'); ?>
+    <?php include('footer.php'); 
+    ?>
     <h3>Order Summary</h3>
 <ul class="list-group mb-3">
     <?php
