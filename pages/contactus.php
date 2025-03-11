@@ -24,7 +24,7 @@
      ?>
   
     <div class="form-container">
-        <form action="about1.php" method="post">
+        <form action="welcome.php" method="post">
             <h2>Contact Us</h2>
 
             <b><label for="name">Name:</label></b>

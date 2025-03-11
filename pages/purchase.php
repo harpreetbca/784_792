@@ -26,9 +26,37 @@
 
 
 
+<?php
+session_start();
+?>
+
+<h2>Your Shopping Cart</h2>
+
+<?php if (!empty($_SESSION["cart"])): ?>
+    <ul>
+        <?php foreach ($_SESSION["cart"] as $index => $item): ?>
+            <li>
+                <?php echo $item["product"] . " - $" . $item["price"]; ?>
+                <a href="cart.php?remove=<?php echo $index; ?>">Remove</a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p>Your cart is empty.</p>
+<?php endif; ?>
+
+<a href="product.php">Continue Shopping</a>
+
+
+
+
 
 <?php
     include('footer.php');
     ?>
+
+
+
+
 </body>
 </html>

@@ -65,6 +65,20 @@
             </div>
         </div>
     </div>
+
+    <div class="col-sm-3 mt-5 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../images/bed5.jpeg" class="card-img-top" alt="...">
+                    <p class="topic">Classic Steel Bed Set </p>
+                    <p class="price">₹22,000</p>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <!-- end bedset -->
 
 
