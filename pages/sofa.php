@@ -19,10 +19,14 @@
         crossorigin="anonymous"></script>
 
 
-        <?php
-    include('header.php');
-    ?>
 
+     
+
+
+        <?php
+        include('header.php');
+    ?>
+   
 
 
 
@@ -35,7 +39,12 @@
                     <img src="../images/sofa1.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Contemporary Sofa Set</p>
                     <p class="price">₹40,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Contemporary Sofa Set">
+        <input type="hidden" name="price" value="40000">
+        <input type="hidden" name="image" value="../images/sofa1.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -46,7 +55,12 @@
                     <img src="../images/sofa2.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Vintage Wooden Sofa Set </p>
                     <p class="price">₹40,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Wooden Sofa Set">
+        <input type="hidden" name="price" value="40,000">
+        <input type="hidden" name="image" value="../images/sofa2.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -57,7 +71,12 @@
                     <img src="../images/sofa3.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Minimalist Sofa Set </p>
                     <p class="price">₹24,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Minimalist Sofa Set">
+        <input type="hidden" name="price" value="24,000">
+        <input type="hidden" name="image" value="../images/sofa3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -68,7 +87,12 @@
                     <img src="../images/sofa4.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Royal Velvet Sofa Set </p>
                     <p class="price">₹65,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Royal Velvet Sofa Set">
+        <input type="hidden" name="price" value="65000">
+        <input type="hidden" name="image" value="../images/sofa4.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -79,7 +103,12 @@
                     <img src="../images/sofa5.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Elegant Steel Sofa Set</p>
                     <p class="price">₹32,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Elegant Steel Sofa Set">
+        <input type="hidden" name="price" value="32000">
+        <input type="hidden" name="image" value="../images/sofa5.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -90,7 +119,12 @@
                     <img src="../images/sofa6.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Classic Fabric Sofa Set </p>
                     <p class="price">₹28,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Classic Fabric Sofa Set">
+        <input type="hidden" name="price" value="28000">
+        <input type="hidden" name="image" value="../images/sofa6.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -101,7 +135,12 @@
                     <img src="../images/sofa7.jpeg" class="card-img-top" alt="...">
                     <p class="topic"> Wooden Frame Sofa Set </p>
                     <p class="price">₹38,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Wooden Frame Sofa Set">
+        <input type="hidden" name="price" value="38000">
+        <input type="hidden" name="image" value="../images/sofa7.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>
@@ -112,7 +151,12 @@
                     <img src="../images/sofa8.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Luxe Leather Sofa Set </p>
                     <p class="price">₹50,000</p>
-                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                     <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Luxe Leather Sofa Set">
+        <input type="hidden" name="price" value="50000">
+        <input type="hidden" name="image" value="../images/sofa8.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
                 </div>
             </div>
         </div>

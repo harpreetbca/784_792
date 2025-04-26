@@ -78,7 +78,12 @@
           <img src="../images/almirah6.jpeg" class="card-img-top" alt="...">
           <p class="topic">Elegant Steel Almirah</p>
           <p class="price">₹15,550</p>
-          <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+           <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Teak Almirah">
+        <input type="hidden" name="price" value="30000">
+        <input type="hidden" name="image" value="../images/almirah3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
         </div>
       </div>
     </div>
@@ -88,7 +93,12 @@
           <img src="../images/bed2.jpeg" class="card-img-top" alt="...">
           <p class="topic">Modern Steel Frame Bed Set</p>
           <p class="price">₹20,000</p>
-          <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+           <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Teak Almirah">
+        <input type="hidden" name="price" value="30000">
+        <input type="hidden" name="image" value="../images/almirah3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
         </div>
       </div>
     </div>
@@ -98,7 +108,12 @@
           <img src="../images/sofa8.jpeg" class="card-img-top" alt="...">
           <p class="topic">Luxe Leather Sofa Set </p>
           <p class="price">₹50,000</p>
-          <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+           <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Teak Almirah">
+        <input type="hidden" name="price" value="30000">
+        <input type="hidden" name="image" value="../images/almirah3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
         </div>
       </div>
     </div>
@@ -108,7 +123,12 @@
           <img src="../images/sofa6.jpeg" class="card-img-top" alt="...">
           <p class="topic">Classic Fabric Sofa Set </p>
           <p class="price">₹28,000</p>
-          <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+           <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Teak Almirah">
+        <input type="hidden" name="price" value="30000">
+        <input type="hidden" name="image" value="../images/almirah3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
         </div>
       </div>
     </div>
@@ -118,7 +138,12 @@
           <img src="../images/almirah5.jpeg" class="card-img-top" alt="...">
           <p class="topic">Sheesham Wood Almirah </p>
           <p class="price">₹35,000</p>
-          <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+           <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Teak Almirah">
+        <input type="hidden" name="price" value="30000">
+        <input type="hidden" name="image" value="../images/almirah3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
         </div>
       </div>
     </div>
@@ -128,7 +153,12 @@
           <img src="../images/sofa1.jpeg" class="card-img-top" alt="...">
           <p class="topic">Contemporary Corner Sofa Set</p>
           <p class="price">₹40,000</p>
-          <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+           <form method="post" action="add_to_cart.php">
+        <input type="hidden" name="name" value="Vintage Teak Almirah">
+        <input type="hidden" name="price" value="30000">
+        <input type="hidden" name="image" value="../images/almirah3.jpeg">
+        <button type="submit" class="btn btn-dark">Add to Cart</button>
+      </form>
         </div>
       </div>
     </div>
