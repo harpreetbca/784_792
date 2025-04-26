@@ -38,7 +38,7 @@
             <div class="card">
                 <div class="card-body">
                     <img src="../images/bed2.jpeg" class="card-img-top" alt="...">
-                    <p class="topic">Modern Steel Frame Bed Set</p>
+                    <p class="topic">Modern Steel Bed Set</p>
                     <p class="price">₹20,000</p>
                     <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
@@ -60,6 +60,50 @@
                     <img src="../images/bed4.jpeg" class="card-img-top" alt="...">
                     <p class="topic">Classic Steel Bed Set </p>
                     <p class="price">₹22,000</p>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-5 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../images/bed5.jpeg" class="card-img-top" alt="...">
+                    <p class="topic">Triple Tree Bed Set </p>
+                    <p class="price">₹34,199</p>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-5 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../images/bed6.jpeg" class="card-img-top" alt="...">
+                    <p class="topic">Intercon Oak Park</p>
+                    <p class="price">₹31,899</p>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-5 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../images/bed7.jpeg" class="card-img-top" alt="...">
+                    <p class="topic">Golden Wood Bed Set </p>
+                    <p class="price">₹29,999</p>
+                    <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-5 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../images/bed8.jpeg" class="card-img-top" alt="...">
+                    <p class="topic">Aquari Queen Hydraulic</p>
+                    <p class="price">₹45,138</p>
                     <a href="./purchase.php" class="btn btn-dark ">Purchase</a>
                 </div>
             </div>

@@ -51,7 +51,7 @@
         <img src="../images/download3.jpeg" class="d-sm w-100 " style="height: 600px;" alt="pic">
 
       </div>
-      <div class="carousel-item height=">
+      <div class="carousel-item">
         <img src="../images/download4.jpeg" class="d-sm w-100 " style="height: 600px;" alt="pic">
 
       </div>
