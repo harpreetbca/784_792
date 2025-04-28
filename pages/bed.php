@@ -27,6 +27,11 @@
    ?>
     <!-- bed set product -->
 
+    <?php
+    include 'db_connect.php'; 
+
+    ?>
+
     <div class="row">
         <div class="col-sm-3 mt-5">
             <div class="card">
