@@ -5,6 +5,7 @@ include 'db.php';
 
 
 $products = [
+    // almirahs
     ["Classic Wooden Almirah", 25000, "../images/almirah2.jpeg"],
     ["Royal Steel Wardrobe", 18000, "../images/almirah.jpeg"],
     ["Vintage Teak Almirah", 30000, "../images/almirah3.jpeg"],
