@@ -12,7 +12,7 @@ include 'db.php'; // include the database connection file
         .product-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 50x;
             padding: 20px;
         }
         .product-card {
