@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'furnio_db.php';
 
 
 
