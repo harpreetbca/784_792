@@ -1,4 +1,4 @@
-<?php include('db.php'); ?>
+<?php include('furnio_db.php'); ?>
 
 <!DOCTYPE html>
 <html>
