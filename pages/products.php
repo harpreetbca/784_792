@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // include the database connection file
+include 'furnio_db.php'; // include the database connection file
 ?>
 
 <!DOCTYPE html>
