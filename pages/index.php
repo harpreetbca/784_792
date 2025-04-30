@@ -44,7 +44,11 @@
     </div>
     <div class="carousel-inner ">
       <div class="carousel-item active">
+<<<<<<< HEAD:pages/index.html
+        <img src="../images/download5.jpeg" class="d-sm w-100 mb-auto " style="height: 600px;" alt="pic">
+=======
         <img src="../imageS/about4.jpeg" class="d-sm w-100 mb-auto " style="height: 600px;" alt="pic">
+>>>>>>> 0415d5c1e0d8b6441ab1b84e48c211dd42dac094:pages/index.php
 
       </div>
       <div class="carousel-item ">
