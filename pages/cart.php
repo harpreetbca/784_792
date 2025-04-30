@@ -1,34 +1,27 @@
 <?php
 session_start();
-include('header.php');
-?>
 
-<h2 class="text-center mt-4">Your Cart</h2>
-<div class="container">
-  <div class="row">
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $product_id = $_POST['product_id'];
+    $product_name = $_POST['product_name'];
+    $product_price = $_POST['product_price'];
 
-    <?php
-    if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
-        foreach ($_SESSION['cart'] as $item) {
-            echo '<div class="col-sm-3 mt-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="' . $item['image'] . '" class="card-img-top" alt="' . $item['name'] . '">
-                            <p class="topic">' . $item['name'] . '</p>
-                            <p class="price">₹' . $item['price'] . '</p>
-                        </div>
-                    </div>
-                  </div>';
-        }
-        echo '<div class="text-center my-4">
-                <a href="checkout.php" class="btn btn-success">Proceed to Checkout</a>
-              </div>';
-    } else {
-        echo "<p class='text-center mt-4'>Your cart is empty.</p>";
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = [];
     }
-    ?>
 
-  </div>
-</div>
+    // If the product is already in the cart, increase its quantity
+    if (isset($_SESSION['cart'][$product_id])) {
+        $_SESSION['cart'][$product_id]['quantity'] += 1;
+    } else {
+        $_SESSION['cart'][$product_id] = [
+            'name' => $product_name,
+            'price' => $product_price,
+            'quantity' => 1
+        ];
+    }
 
-<?php include('footer.php'); ?>
+    header("Location: cart.php");
+    exit;
+}
+?>
