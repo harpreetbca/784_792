@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (in_array($imageType, $allowedTypes)) {
             // Move uploaded image to target directory
             if (move_uploaded_file($image["tmp_name"], $targetFilePath)) {
-                $sql = "INSERT INTO products (name, price, image) VALUES (?, ?, ?)";
+                $sql = "INSERT INTO newproducts (name, price, image) VALUES (?, ?, ?)";
                 $stmt = $conn->prepare($sql);
 
                 // Check if the prepared statement was successful
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="orders.php">Orders</a></li>
         <li><a href="order_items.php">Order Items</a></li>
         <li><a href="add_product.php" class="active">Add Product</a></li>
-        <li><a href="delete_product.php" class="active">delete Product</a></li>
+        
         <div class="content">
         
 </div>

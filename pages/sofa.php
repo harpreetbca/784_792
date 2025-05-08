@@ -35,7 +35,7 @@
       }
 
       // Only fetch products that contain "almirah" in their name
-      $sql = "SELECT id, image, name, price FROM products WHERE name LIKE '%sofa%'";
+      $sql = "SELECT id, image, name, price FROM newproducts WHERE name LIKE '%sofa%'";
 
       $result = $conn->query($sql);
 

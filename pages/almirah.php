@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,103 +19,49 @@ session_start();
 
   <?php include('header.php'); ?>
 
-  <div class="row">
-    <!-- Product 1 -->
-    <div class="col-sm-3 mt-5 mb-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah2.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Classic Wooden Almirah</p>
-          <p class="price">₹25,000</p>
-          <a href="cart.php?action=add&id=6" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
+  <div class="container mt-5">
+    <div class="row g-4">
+      <?php
+      
+      // Database connection
+      $conn = new mysqli("localhost", "root", "", "furnio_db");
 
-    <!-- Product 2 -->
-    <div class="col-sm-3 mt-5 mb-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Royal Steel Wardrobe</p>
-          <p class="price">₹18,000</p>
-          <a href="cart.php?action=add&id=7" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
+      if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+      }
 
-    <!-- Product 3 -->
-    <div class="col-sm-3 mt-5 mb-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah3.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Vintage Teak Almirah</p>
-          <p class="price">₹30,000</p>
-          <a href="cart.php?action=add&id=8" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
+      // Only fetch products that contain "almirah" in their name
+      $sql = "SELECT id, image, name, price FROM newproducts WHERE name LIKE '%almirah%'";
 
-    <!-- Product 4 -->
-    <div class="col-sm-3 mt-5 mb-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah4.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Modern Steel Closet</p>
-          <p class="price">₹22,000</p>
-          <a href="cart.php?action=add&id=9" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
+      $result = $conn->query($sql);
 
-    <!-- Product 5 -->
-    <div class="col-sm-3 mt-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah5.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Sheesham Wood Almirah</p>
-          <p class="price">₹35,000</p>
-          <a href="cart.php?action=add&id=10" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
+      if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()) {
+              echo "<div class='col-sm-6 col-md-4 col-lg-3'>";
+              echo "<div class='card h-100' style='border: 1px solid rgb(233, 229, 229); border-radius: 30px; background-color: #eff6ee; padding: 20px; text-align: center; height: 400px;'>";
+              echo "<img src='" . $row['image'] . "' class='card-img-top' alt='" . $row['name'] . "' style='width: 100%; height: 200px; object-fit: cover; border-radius: 10px;'>";
+              echo "<div class='card-body'>";
+              echo "<p class='topic' style='font-weight: bolder; font-size: large; font-family: Georgia, Times, serif; margin-top: 10px; text-align: center;'>" . $row['name'] . "</p>";
+              echo "<p class='price' style='font-weight: bold; font-size: medium; font-family: Georgia, Times, serif; margin-top: 10px; text-align: center;'>₹" . number_format($row['price'], 0, '.', ',') . "</p>";
+              echo "<div class='d-grid'>
+                      <a href='./cart.php?action=add&id={$row['id']}' 
+                         class='btn btn-dark' 
+                         style='display: flex; justify-content: center; height: 40px; align-items: center; border: none; border-radius: 8px; background-color: #273043; color: white;'>
+                         Add to cart
+                      </a>
+                    </div>";
+              echo "</div>";  // Close card-body
+              echo "</div>";  // Close card
+              echo "</div>";  // Close col
+          }
+      } else {
+          echo "<p class='text-center'>No Almirah products found.</p>";
+      }
 
-    <!-- Product 6 -->
-    <div class="col-sm-3 mt-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah6.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Elegant Steel Almirah</p>
-          <p class="price">₹15,550</p>
-          <a href="cart.php?action=add&id=11" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product 7 -->
-    <div class="col-sm-3 mt-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah7.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Antique Wooden Wardrobe</p>
-          <p class="price">₹23,979</p>
-          <a href="cart.php?action=add&id=12" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product 8 -->
-    <div class="col-sm-3 mt-5 mb-5">
-      <div class="card">
-        <div class="card-body">
-          <img src="../images/almirah8.jpeg" class="card-img-top" alt="...">
-          <p class="topic">Sturdy Steel Almirah</p>
-          <p class="price">₹17,290</p>
-          <a href="cart.php?action=add&id=13" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-  </div>
+      $conn->close();
+      ?>
+    </div> <!-- End row -->
+  </div> <!-- End container -->
 
   <?php include('footer.php'); ?>
 </body>

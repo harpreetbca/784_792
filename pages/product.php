@@ -42,18 +42,21 @@
       }
 
       // Query to get the product data
-      $sql = "SELECT id, image, name, price FROM products"; // Assuming your table is named 'products'
+      $sql = "SELECT id, image, name, price FROM newproducts"; // Assuming your table is named 'newproducts'
       $result = $conn->query($sql);
 
       // Check if there are any results
       if ($result->num_rows > 0) {
           // Output data for each row
           while($row = $result->fetch_assoc()) {
+              // Sanitize image path to avoid possible security issues
+              $imagePath = htmlspecialchars($row['image']);
+
               echo "<div class='col-sm-6 col-md-4 col-lg-3'>";
               echo "<div class='card h-100' style='border: 1px solid rgb(233, 229, 229); border-radius: 30px; background-color: #eff6ee; padding: 20px; text-align: center; height: 400px;'>";
-              echo "<img src='" . $row['image'] . "' class='card-img-top' alt='" . $row['name'] . "' style='width: 100%; height: 200px; border-radius: 10px; margin: 0 auto;'>";
+              echo "<img src='$imagePath' class='card-img-top' alt='" . htmlspecialchars($row['name']) . "' style='width: 100%; height: 200px; border-radius: 10px; margin: 0 auto;'>";
               echo "<div class='card-body'>";
-              echo "<p class='topic' style='font-weight: bolder; font-size: large; font-family: Georgia, Times, serif; margin-top: 10px; text-align: center;'>" . $row['name'] . "</p>";
+              echo "<p class='topic' style='font-weight: bolder; font-size: large; font-family: Georgia, Times, serif; margin-top: 10px; text-align: center;'>" . htmlspecialchars($row['name']) . "</p>";
               echo "<p class='price' style='font-weight: bold; font-size: medium; font-family: Georgia, Times, serif; margin-top: 10px; text-align: center;'>₹" . number_format($row['price'], 0, '.', ',') . "</p>";
 
               // Add to cart button with session handling
@@ -69,7 +72,7 @@
               echo "</div>";  // Close col
           }
       } else {
-          echo "No products found.";
+          echo "<div class='alert alert-warning' role='alert'>No products found.</div>";
       }
 
       // Close connection
