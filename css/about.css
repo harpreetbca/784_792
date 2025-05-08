@@ -37,7 +37,7 @@
     top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid white; /* White border */
+    border: 3px solid rgb(77, 40, 40); /* White border */
     width: 20%;
     height: 9%;
     padding-top: 10px;

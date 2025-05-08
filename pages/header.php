@@ -56,3 +56,15 @@
     </div>
   </nav>
   <!-- end navbar -->
+
+
+  <?php
+// Make sure session is started and user is authenticated
+if (!isset($_SESSION)) session_start();
+
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
