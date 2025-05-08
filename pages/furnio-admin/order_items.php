@@ -23,7 +23,7 @@ $result = $conn->query($sql);
             <li><a href="orders.php">Orders</a></li>
             <li><a href="order_items.php">Order Items</a></li>
             <li><a href="add_product.php">Add Product</a></li>
-            <li><a href="delete_product.php">Delete Product</a></li>
+            
             
 
 

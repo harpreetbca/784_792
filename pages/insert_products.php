@@ -35,7 +35,7 @@ foreach ($products as $product) {
     $price = $product[1];
     $image = $conn->real_escape_string($product[2]);
 
-    $sql = "INSERT INTO products (name, price, image) VALUES ('$name', $price, '$image')";
+    $sql = "INSERT INTO newproducts (name, price, image) VALUES ('$name', $price, '$image')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Inserted: $name<br>";
