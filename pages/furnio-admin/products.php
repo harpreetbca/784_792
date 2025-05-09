@@ -5,170 +5,116 @@ include './furnio_db.php'; // Database connection
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Product List</title>
+    <title>Products List</title>
     <style>
        <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: flex;
-        background-color: #f5f7fa;
-        min-height: 100vh;
-    }
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #2c3e50;
+    padding-top: 20px;
+}
 
-    /* Sidebar */
-    .sidebar {
-        width: 220px;
-        background-color: #2c3e50;
-        padding-top: 30px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-    }
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-    }
+.sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
 
-    .sidebar ul li {
-        margin-bottom: 10px;
-    }
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1abc9c;
+}
 
-    .sidebar ul li a {
-        display: block;
-        padding: 14px 20px;
-        color: #ffffffcc;
-        text-decoration: none;
-        transition: 0.3s ease;
-        font-weight: 500;
-    }
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-    .sidebar ul li a:hover,
-    .sidebar ul li a.active {
-        background-color: #1abc9c;
-        color: #fff;
-    }
+.logout-btn:hover {
+    background-color: #c0392b;
+}
 
-    /* Logout Button */
-    .logout-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: #e74c3c;
-        color: #fff;
-        padding: 10px 18px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        transition: background 0.3s ease;
-    }
+h2 {
+    margin-left: 220px;
+    padding: 20px 0;
+    color: #333;
+}
 
-    .logout-btn:hover {
-        background-color: #c0392b;
-    }
+table {
+    width: 80%;
+    margin: 0 auto 50px auto;
+    margin-left: 220px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-    /* Header */
-    h2 {
-        margin-left: 240px;
-        margin-top: 30px;
-        font-size: 26px;
-        color: #333;
-    }
+table thead {
+    background-color: #34495e;
+    color: white;
+}
 
-    /* Table Styling */
-    table {
-        width: calc(100% - 260px);
-        margin-left: 240px;
-        margin-top: 30px;
-        border-collapse: collapse;
-        background-color: #fff;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        border-radius: 8px;
-        overflow: hidden;
-    }
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
 
-    th, td {
-        padding: 14px 16px;
-        text-align: center;
-        border-bottom: 1px solid #eee;
-        font-size: 14px;
-    }
+table tr:hover {
+    background-color: #f1f1f1;
+}
 
-    th {
-        background-color: #f9fafb;
-        color: #333;
-        font-weight: 600;
-    }
+.btn {
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
 
-    td {
-        color: #555;
-    }
+.btn-update {
+    background-color: #3498db;
+    color: white;
+}
 
-    /* Image Path Cell */
-    td:nth-child(3) {
-        font-family: monospace;
-        color: #666;
-        font-size: 13px;
-    }
+.btn-update:hover {
+    background-color: #2980b9;
+}
 
-    /* Buttons */
-    .btn {
-        padding: 6px 12px;
-        color: #fff;
-        text-decoration: none;
-        font-size: 13px;
-        border-radius: 4px;
-        margin: 0 4px;
-        display: inline-block;
-    }
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
 
-    .btn-update {
-        background-color: #28a745;
-    }
+.btn-delete:hover {
+    background-color: #c0392b;
+}
 
-    .btn-update:hover {
-        background-color: #218838;
-    }
-
-    .btn-delete {
-        background-color: #dc3545;
-    }
-
-    .btn-delete:hover {
-        background-color: #c82333;
-    }
-
-    @media (max-width: 768px) {
-        body {
-            flex-direction: column;
-        }
-
-        .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-
-        h2, table {
-            margin-left: 0;
-            width: 100%;
-        }
-
-        .logout-btn {
-            top: 10px;
-            right: 10px;
-        }
-    }
-</style>
 
     </style>
 </head>
@@ -184,7 +130,7 @@ include './furnio_db.php'; // Database connection
         </ul>
     </div>
         
-<h2 style="text-align:center;">Product List</h2>
+<h2 style="text-align:center;">Products List</h2>
 
 <table>
     <thead>
@@ -197,6 +143,7 @@ include './furnio_db.php'; // Database connection
         </tr>
     </thead>
     <tbody>
+        
         <?php
         $sql = "SELECT * FROM newproducts";
         $result = $conn->query($sql);
@@ -204,7 +151,7 @@ include './furnio_db.php'; // Database connection
         if ($result && $result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 // Assuming images are stored in a directory called "images"
-                $imagePath = 'images/' . $row['image'];
+                $imagePath =  $row['image'];
                 
                 echo "<tr>
                         <td>{$row['id']}</td>

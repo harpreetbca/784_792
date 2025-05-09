@@ -69,89 +69,78 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-        font-family: 'Lora', serif;
-        background: #86608e;
-        color: #333;
-    }
-    .container {
-        max-width: 900px;
-        margin-top: 80px;
-    }
-    .card {
-        border: none;
-        border-radius: 20px; /* Added border-radius to the card */
-        background-color: #86608e; /* Applying your requested background color */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-    .card-body {
-        padding: 50px;
-       
-        border-radius: 20px; /* Added border-radius to the card body */
-    }
-    .h2, .h4 {
-        font-family: 'Playfair Display', serif;
-        color: #222;
-        font-weight: 700;
-    }
-    .btn-primary {
-        background-color: #6f4c7d;
-        border-color: #6f4c7d;
-        padding: 14px 28px;
-        font-size: 18px;
-        border-radius: 12px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    .btn-primary:hover {
-        background-color: #5e3b6e;
-        border-color: #5e3b6e;
-        transform: scale(1.05);
-    }
-    .list-group-item {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 18px;
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 15px;
-        border-radius: 10px;
-        transition: background-color 0.3s ease;
-    }
-    .list-group-item:hover {
-        background-color:rgb(129, 104, 144);
-    }
-    .total-price {
-        font-size: 22px;
-        font-weight: 700;
-        color: #333;
-        margin-top: 30px;
-    }
-    .form-control {
-        border-radius: 10px; /* Added border-radius to input fields */
-        border: 1px solid #ddd;
-        padding: 15px;
-        font-size: 16px;
-        transition: border 0.3s ease;
-    }
-    .form-control:focus {
-        border-color: #6f4c7d;
-        box-shadow: 0 0 10px rgba(134,96,142,0.4);
-    }
-    hr {
-        border-top: 1px solid #ddd;
-    }
-    .header, .footer {
-        background-color: #86608e;
-        color: white;
-        text-align: center;
-        padding: 25px 0;
-    }
-    .footer p {
-        margin-bottom: 0;
-    }
-    .header h1, .footer p {
-        font-family: 'Playfair Display', serif;
-    }
+   body {
+    font-family: 'Lora', serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+}
+
+.card-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.list-group-item {
+    font-size: 16px;
+    background-color: #fdfdfd;
+    border-color: #e9ecef;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    color: #2c3e50;
+}
+
+.btn-primary {
+    background-color: #1abc9c;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #17a589;
+}
+
   </style>
 </head>
 <body>

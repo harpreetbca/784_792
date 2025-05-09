@@ -3,8 +3,6 @@
 
 include 'furnio_db.php';
 
-$sql = "SELECT * FROM orders";
-$result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -151,6 +149,9 @@ $result = $conn->query($sql);
             </thead>
             <tbody>
                 <?php
+                
+                $sql = "SELECT * FROM orders";
+                $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         echo "<tr>

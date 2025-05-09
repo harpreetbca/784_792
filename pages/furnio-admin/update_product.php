@@ -41,28 +41,71 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>Update Product</title>
     <style>
-        form {
-            width: 400px;
-            margin: 40px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
-        label, input {
-            display: block;
-            width: 100%;
-            margin-bottom: 12px;
-        }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            padding: 8px;
-            border: none;
-            cursor: pointer;
-        }
-        img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+img {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
     </style>
 </head>
 <body>

@@ -10,7 +10,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/product.css"> <!-- Your custom CSS -->
-  <title>FURNITURE - Almirah Products</title>
+  <title>FURNITURE - sofa Products</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
   <div class="container mt-5">
     <div class="row g-4">
       <?php
-      session_start();
+      
 
       // Database connection
       $conn = new mysqli("localhost", "root", "", "furnio_db");

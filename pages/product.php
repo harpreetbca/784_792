@@ -25,7 +25,7 @@
     <div class="row g-4">
       <?php
       // Start the session for cart management
-      session_start();
+      
 
       // Database connection
       $servername = "localhost";

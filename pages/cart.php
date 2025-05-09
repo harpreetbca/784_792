@@ -61,7 +61,71 @@ if (isset($_GET['action']) && $_GET['action'] === 'remove' && isset($_GET['id'])
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
 <?php include('header.php'); ?>
+
+<style>
+    /* Basic styling for the cart table */
+table.table {
+    background-color: light green;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.table th,
+table.table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+table.table th {
+    background-color:lightgrey;
+    color: #333;
+    border-bottom: 2px solid #dee2e6;
+}
+
+table.table td {
+    border-bottom: 1px solidrgb(34, 55, 76);
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.btn-danger {
+    background-color:lightgreen;
+    border: square;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-primary,
+.btn-secondary {
+    border: none;
+}
+
+/* Total section */
+h4 {
+    margin-top: 20px;
+    font-weight: bold;
+    color:rgb(7, 26, 44);
+}
+
+/* Empty cart message */
+p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+
+    </style>
 
 <div class="container mt-5">
     <h2>Your Shopping Cart</h2>
