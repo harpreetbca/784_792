@@ -7,7 +7,7 @@ include './furnio_db.php'; // Database connection
 <head>
     <title>Products List</title>
     <style>
-       <style>
+       
       
 /* General styles */
 body {

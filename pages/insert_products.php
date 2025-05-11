@@ -1,9 +1,22 @@
 <?php
-// Correct path if furnio_db.php is one level up
+// Display errors for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Include DB connection
 include './furnio-admin/furnio_db.php';
 
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Optional: Delete existing records
+$conn->query("DELETE FROM newproducts");
+
+// Reset auto-increment
+$conn->query("ALTER TABLE newproducts AUTO_INCREMENT = 1");
+
 $products = [
-    // Almirahs
     ["Classic Wooden Almirah", 25000, "../images/almirah2.jpeg"],
     ["Royal Steel Wardrobe", 18000, "../images/almirah.jpeg"],
     ["Vintage Teak Almirah", 30000, "../images/almirah3.jpeg"],
@@ -12,14 +25,10 @@ $products = [
     ["Elegant Steel Almirah", 15550, "../images/almirah6.jpeg"],
     ["Antique Wooden Wardrobe", 23979, "../images/almirah7.jpeg"],
     ["Sturdy Steel Almirah", 17290, "../images/almirah8.jpeg"],
-
-    // Beds
     ["Elegant Wooden Bed Set", 35000, "../images/bed1.jpeg"],
     ["Modern Steel Frame Bed Set", 20000, "../images/bed2.jpeg"],
     ["Royal Teak Wood Bed Set", 45000, "../images/bed3.jpeg"],
     ["Classic Steel Bed Set", 22000, "../images/bed4.jpeg"],
-
-    // Sofas
     ["Contemporary Corner Sofa Set", 40000, "../images/sofa1.jpeg"],
     ["Vintage Wooden Sofa Set", 40000, "../images/sofa2.jpeg"],
     ["Minimalist Modular Sofa Set", 24000, "../images/sofa3.jpeg"],
@@ -28,6 +37,7 @@ $products = [
     ["Classic Fabric Sofa Set", 28000, "../images/sofa6.jpeg"],
     ["Modern Wooden Frame Sofa Set", 38000, "../images/sofa7.jpeg"],
     ["Luxe Leather Sofa Set", 60000, "../images/sofa8.jpeg"]
+    // Add all other products here
 ];
 
 foreach ($products as $product) {
@@ -35,7 +45,11 @@ foreach ($products as $product) {
     $price = $product[1];
     $image = $conn->real_escape_string($product[2]);
 
+    // SQL Insert query
     $sql = "INSERT INTO newproducts (name, price, image) VALUES ('$name', $price, '$image')";
+
+    // Output the SQL query for debugging
+    var_dump($sql);
 
     if ($conn->query($sql) === TRUE) {
         echo "Inserted: $name<br>";
@@ -44,5 +58,10 @@ foreach ($products as $product) {
     }
 }
 
+echo "All products inserted successfully!";
+
 $conn->close();
 ?>
+
+
+
