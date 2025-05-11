@@ -28,19 +28,18 @@ if(mysqli_query($conn, $sql))
 else {
     echo "error" . mysqli_error($conn);
 }
-
-
-
-
-
-
-
-
 ?>
 
-
-
 <?php include('footer.php');  ?> 
+
+
+
+
+
+
+
+
+
 
 
 

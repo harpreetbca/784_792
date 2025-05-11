@@ -21,54 +21,72 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>Login</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background: #ecf0f1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+       /* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .login-box {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+/* Login box */
+.login-box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(30, 58, 138, 0.3);
+    width: 300px;
+    text-align: center;
+}
 
-        .login-box h2 {
-            margin-bottom: 20px;
-        }
+.login-box h2 {
+    margin-bottom: 25px;
+    color: #1e3a8a;
+}
 
-        .login-box input[type="text"],
-        .login-box input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+/* Input fields */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    border: 1px solid #93c5fd;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
-        .login-box input[type="submit"] {
-            background-color: #2ecc71;
-            color: white;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+/* Submit button */
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        .login-box input[type="submit"]:hover {
-            background-color: #27ae60;
-        }
+.login-box input[type="submit"]:hover {
+    background-color: #1e40af;
+}
 
-        .error {
-            color: red;
-            margin-bottom: 10px;
-        }
+/* Error message */
+.error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-left: 5px solid #dc2626;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
     </style>
 </head>
 <body>

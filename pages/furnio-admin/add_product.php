@@ -63,6 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 <div class="sidebar">
     <ul>
+        <li><a href="dashboard.php">Dashboard</a></li>
         <li><a href="products.php">Products</a></li>
         <li><a href="orders.php">Orders</a></li>
         <li><a href="order_items.php">Order Items</a></li>
@@ -96,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="form-group">
-            <label for="image">Upload Image:</label>
+            <label for="image">images:</label>
             <input type="file" id="image" name="image" accept="image/*" required>
         </div>
 
@@ -104,148 +105,144 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </div>
 <style>
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/* General styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f7;
-    display: flex;
-    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
 }
 
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 220px;
-    background-color: #2c3e50;
-    padding-top: 30px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    background-color: #1e3a8a;
+    padding-top: 60px;
 }
 
 .sidebar ul {
-    list-style: none;
-}
-
-.sidebar ul li {
-    margin: 12px 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .sidebar ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    padding: 12px 20px;
     display: block;
-    font-size: 16px;
-    border-left: 4px solid transparent;
-    transition: 0.3s;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
-    background-color: #34495e;
-    border-left: 4px solid #1abc9c;
+    background-color: #2563eb;
 }
 
-/* Content Area */
+/* Content area */
 .content {
-    flex-grow: 1;
-    padding: 40px;
-    position: relative;
+    margin-left: 250px;
+    padding: 30px;
 }
 
 .content h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    color: #1e3a8a;
 }
 
-/* Logout Button */
-.logout-btn {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    padding: 10px 20px;
-    background-color: #e74c3c;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-.logout-btn:hover {
-    background-color: #c0392b;
-}
-
-/* Form Styles */
+/* Form styles */
 .form-container {
-    background-color: #ffffff;
+    background: #ffffff;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(30, 58, 138, 0.1);
     max-width: 500px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-label {
+.form-group label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #34495e;
+    margin-bottom: 6px;
+    color: #1e3a8a;
+    font-weight: bold;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="file"] {
+.form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-input[type="file"] {
-    padding: 8px;
+    border: 1px solid #93c5fd;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .submit-btn {
-    background-color: #27ae60;
+    background-color: #2563eb;
     color: white;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #219150;
+    background-color: #1d4ed8;
 }
 
-/* Message Alert */
-.alert {
-    background-color: #ffeded;
-    border-left: 5px solid #e74c3c;
-    padding: 12px;
-    margin-bottom: 20px;
-    color: #c0392b;
-    font-weight: 500;
-    border-radius: 6px;
+/* Logout button */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
+
+.logout-btn:hover {
+    background-color: #1e40af;
+}
+
+/* Alert message */
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e0f2fe;
+    border-left: 5px solid #2563eb;
+    color: #0c4a6e;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
 </style>
 
+    <footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Furnio Admin Panel. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
 

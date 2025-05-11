@@ -12,119 +12,115 @@ include 'furnio_db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
     <style>
-    /* Reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        /* General page styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+}
 
-    /* Body Layout */
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        display: flex;
-        min-height: 100vh;
-        background-color: #f8f9fa;
-    }
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #1e3a8a; /* Deep blue */
+    padding-top: 60px;
+}
 
-    /* Sidebar */
-    .sidebar {
-        width: 220px;
-        background-color: #2c3e50;
-        padding-top: 30px;
-        height: 100vh;
-    }
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-    }
+.sidebar ul li a {
+    display: block;
+    padding: 15px 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    length: 40px;
+}
 
-    .sidebar ul li {
-        margin: 10px 0;
-    }
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #2563eb; /* Lighter blue */
+}
 
-    .sidebar ul li a {
-        display: block;
-        padding: 12px 20px;
-        color: #ecf0f1;
-        text-decoration: none;
-        font-size: 16px;
-        transition: background-color 0.3s;
-    }
+/* Content area */
+.content {
+    margin-left: 250px;
+    padding: 30px;
+}
 
-    .sidebar ul li a:hover,
-    .sidebar ul li a.active {
-        background-color: #34495e;
-        border-left: 4px solid #1abc9c;
-    }
+.content h1 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
 
-    /* Content Area */
-    .content {
-        flex-grow: 1;
-        padding: 40px;
-        position: relative;
-    }
+/* Logout button */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 
-    /* Page Title */
-    .content h1 {
-        font-size: 28px;
-        color: #2c3e50;
-        margin-bottom: 20px;
-    }
+.logout-btn:hover {
+    background-color: #1e40af;
+}
 
-    /* Logout Button */
-    .logout-btn {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        background-color: #e74c3c;
-        color: #fff;
-        padding: 10px 18px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 14px;
-        transition: background-color 0.3s ease;
-    }
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 100, 0.1);
+}
 
-    .logout-btn:hover {
-        background-color: #c0392b;
-    }
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
 
-    /* Table Styling */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 6px;
-        overflow: hidden;
-    }
+thead {
+    background-color: #1e3a8a;
+    color: #fff;
+}
 
-    th, td {
-        padding: 14px 20px;
-        text-align: left;
-        border-bottom: 1px solid #eaeaea;
-    }
+tbody tr:hover {
+    background-color: #e0f2fe;
+}
 
-    thead {
-        background-color: #1abc9c;
-        color: white;
-    }
+/* Footer styles */
+.footer {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    left: 250px;
+    bottom: 0;
+    width: calc(100% - 250px);
+}
 
-    tbody tr:hover {
-        background-color: #f1f1f1;
-    }
-
-    tbody td {
-        color: #2c3e50;
-    }
     </style>
 </head>
 <body>
     <div class="sidebar">
         <ul>
+            <li><a href="Dashboard.php">dashboard</a></li>
             <li><a href="products.php">Products</a></li>
             <li><a href="orders.php" class="active">Orders</a></li>
             <li><a href="order_items.php">Order Items</a></li>
@@ -170,6 +166,11 @@ include 'furnio_db.php';
             </tbody>
         </table>
     </div>
+     <footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Furnio Admin Panel. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
 
