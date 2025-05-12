@@ -39,8 +39,7 @@ $delivered_orders = getCount($conn, "SELECT COUNT(*) AS delivered FROM orders WH
 <body>
    <div class="sidebar">
         <ul>
-            <li><a href="dashboard.php"> Dashboard</a></li>
-
+            <li><a href="dashboard.php" class= active> Dashboard</a></li>
             <li><a href="products.php">Products</a></li>
             <li><a href="orders.php">Orders</a></li>
             <li><a href="order_items.php">Order Items</a></li>
